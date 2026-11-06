@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ShelfBoxModsFix.Patcher</AssemblyName>
+    <RootNamespace>ShelfBoxModsFix</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx" HintPath="$(BepInExCore)\BepInEx.dll" Private="false" />
+    <Reference Include="Mono.Cecil" HintPath="$(BepInExCore)\Mono.Cecil.dll" Private="false" />
+  </ItemGroup>
+</Project>

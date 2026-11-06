@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <Authors>JustChoochit</Authors>
+    <Product>Shelf and Box Mods Fix</Product>
+    <Copyright>JustChoochit</Copyright>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <!-- Point this at your game folder, or pass -p:GameDir=... -->
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\TCG Card Shop Simulator</GameDir>
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(GameDir)\BepInEx\core</BepInExCore>
+    <Managed Condition="'$(Managed)' == ''">$(GameDir)\Card Shop Simulator_Data\Managed</Managed>
+  </PropertyGroup>
+</Project>
